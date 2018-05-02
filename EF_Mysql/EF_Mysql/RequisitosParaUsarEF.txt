@@ -1,0 +1,9 @@
+﻿*Nuget
+
+- OOP [FULL]
+
+- LINQ TO SQL
+
+- Entity Framework
+
+- Data Annotations
