@@ -95,9 +95,10 @@ namespace EF_Mysql
         {
             using (var contexto = new DBContext())
             {
-                var p = contexto.Produtos.Where(s => s.Nome == "Denois").First();
+                var p = contexto.Produtos.Where(s => s.Nome == "Anderson V.").First();
                 p.Nome = "Anderson Bellini";
-                p.Preco = 50;
+                p.Preco = 150;
+                contexto.Database.Log = Console.WriteLine; // para monitoramento do log do bd
                 contexto.SaveChanges(); 
             }
     
